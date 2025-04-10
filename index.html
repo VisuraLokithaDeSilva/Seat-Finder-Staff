@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parliament Seat Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPT7260ZMK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EPT7260ZMK');
+    </script>
+    <style>
+        /* Maroon header styles */
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .header h2 {
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .header-button {
+            background-color: white;
+            color: #800000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .header-button:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Maroon Header -->
+    <div class="header">
+        <h2>Parliament Seat Finder</h2>
+        <a href="https://sri-lanka-parliament-member-directory.netlify.app/" class="header-button" target="_blank">Go to Directory App</a>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <h2>Parliament Seat Finder</h2>
+        <div class="input-group">
+            <input type="text" id="searchBox" oninput="showSuggestions()" onkeydown="navigateSuggestions(event)" placeholder="Search by name">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <input type="text" id="seatNumber" placeholder="Search by seat number">
+        <div id="suggestions" class="suggestions"></div>
+        <button class="clear-btn" onclick="clearSearch()">Clear</button>
+    </div>
+    <div id="seatingLayoutContainer">
+        <div id="seatingLayout" class="seating-layout"></div>
+    </div>
+    <a href="Parliament Seat Finder - User Guid.pdf" download>
+        <button class="download-btn">Download the user guide</button>
+    </a>
+    <footer class="footer">
+        © 2025 Visura Lokitha | BSc Computer Science Undergraduate, Trincomalee Campus, Eastern University, Sri Lanka.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

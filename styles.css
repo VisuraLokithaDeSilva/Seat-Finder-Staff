@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto; 
+    background-image: url('The-Sri-Lankan-Parliament.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    display: block; 
+    padding-bottom: 50px;
+}
+
+.overlay {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Name search suggestions – inside the input-group */
+.input-group > .suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Seat search input and its suggestions (using the fact that it’s a direct child of .container) */
+input#seatNumber {
+    background: #fde3e3;
+    font-size: 18px;
+    font-weight: bold;
+    color: #800000;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+    margin-top: 10px; /* Space between the two inputs */
+}
+
+/* The suggestions div immediately following the seatNumber input */
+.container > .suggestions {
+    /* Use static positioning so it pushes the following content down instead of overlapping */
+    position: static;
+    display: none; /* Controlled via JS */
+    margin-top: 5px;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    background: white;
+    color: black;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+#searchBox {
+    background: #fde3e3;
+    font-size: 18px;
+    font-weight: bold;
+    color: #800000;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.suggestion-item:hover, .selected {
+    background: #007bff;
+    color: white;
+}
+
+.clear-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #800000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.clear-btn:hover {
+    background-color: #a00000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.seating-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto; 
+    overflow: auto; 
+    border: 2px solid #800000;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.seat {
+    width: 18px;
+    height: 18px;
+    background-color: initial;
+    color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seat[data-seat^="G-"],
+.seat[data-seat^="OG-"] {
+    background-color: lightcoral; /* light red */
+}
+
+/* For seats that start with "O-" → light blue by default */
+.seat[data-seat^="O-"] {
+    background-color: lightblue;
+}
+
+/* For the specific O seats that should be light green */
+.seat[data-seat="O-73"],
+.seat[data-seat="O-74"],
+.seat[data-seat="O-75"],
+.seat[data-seat="O-76"],
+.seat[data-seat="O-77"],
+.seat[data-seat="O-78"] {
+    background-color: lightgreen;
+}
+
+.seat:hover {
+    opacity: 0.8;
+}
+
+.seat.highlighted {
+    background-color: #ff4500 !important;
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
+}
+
+.empty {
+    width: 18px;
+    height: 18px;
+    visibility: hidden;
+}
+
+.row-break {
+    height: 8px;
+}
+
+a {
+    text-decoration: none;
+}
