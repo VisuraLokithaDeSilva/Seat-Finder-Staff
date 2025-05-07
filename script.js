@@ -283,7 +283,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Build the seating layout using the sequence and manualNumbers arrays
 function generateSeatingLayout() {
     const layoutContainer = document.getElementById('seatingLayout');
     let seatIndex = 0;
@@ -305,11 +304,19 @@ function generateSeatingLayout() {
                         seatDiv.setAttribute('title', seatNum);
                         // Display only the number portion (after the dash)
                         seatDiv.textContent = seatNum.split('-')[1];
-                        // Set seat color based on prefix
+                        // Set seat color based on prefix and specific cases
                         if (seatNum.startsWith("G-") || seatNum.startsWith("OG-")) {
-                            seatDiv.style.backgroundColor = (seatNum === "OG-116") ? "#DEDAF4" : "#FFADAD";
+                            if (seatNum === "OG-116" || seatNum === "G-88") {
+                                seatDiv.style.backgroundColor = "#DEDAF4"; // Purple
+                            } else {
+                                seatDiv.style.backgroundColor = "#FFADAD"; // Default G/OG color
+                            }
                         } else if (seatNum.startsWith("O-")) {
-                            seatDiv.style.backgroundColor = (["O-73","O-74","O-75","O-76","O-77","O-78","O-58"].includes(seatNum)) ? "#DEDAF4" : "#E7FFCE";
+                            if (["O-73", "O-74", "O-75", "O-76", "O-77", "O-78", "O-58"].includes(seatNum)) {
+                                seatDiv.style.backgroundColor = "#DEDAF4"; // Purple
+                            } else {
+                                seatDiv.style.backgroundColor = "#E7FFCE"; // Default O color
+                            }
                         }
                         // When a seat is clicked, update the fields and highlight it
                         seatDiv.addEventListener("click", function() {
@@ -329,11 +336,12 @@ function generateSeatingLayout() {
     });
 }
 
+
 // Called when a seat is clicked
 function handleSeatClick(seatNumber) {
     // For this layout, seatNumber is already the complete string (e.g. "G-01")
     const seatPrefix = seatNumber.split(' ')[0]; // In our case, no extra text exists.
-    const emptySeats = ["O-73", "O-74", "O-75", "O-76", "O-77", "O-78", "OG-116","O-58"];
+    const emptySeats = ["O-73", "O-74", "O-75", "O-76", "O-77", "O-78", "OG-116","O-58","G-88"];
     if (emptySeats.includes(seatPrefix)) {
         searchBox.value = "Empty Seat";
         seatNumberInput.value = seatPrefix;
