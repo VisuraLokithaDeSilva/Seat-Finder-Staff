@@ -150,7 +150,7 @@ const members = [
     { name: "Hon. Chandana Sooriyaarachchi", seat: "OG-101 (Colombo)" },
     { name: "Hon. Major General Sooriyabandara", seat: "OG-102 (Kurunegala)" },
     { name: "Hon. Aravinda Senarath", seat: "OG-103 (Hambantota)" },
-    { name: "Hon. Kitnan Selvaraj", seat: "OG-104 (Nuwara Eliya)" },
+    { name: "Hon. Kitnan Selvaraj", seat: "OG-104 (Badulla)" },
     { name: "Hon. (Dr.) Janaka Senarathna", seat: "OG-105 (Ratnapura)" },
     { name: "Hon. Chandima Hettiaratchi", seat: "OG-106 (Kalutara)" },
     { name: "Hon. Champika Hettiarachchi", seat: "OG-107 (Gampaha)" },
