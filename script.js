@@ -87,7 +87,7 @@ const members = [
     { name: "Hon. (Mrs.) Nilusha Lakmali Gamage", seat: "G-82 (Ratnapura)" },
     { name: "Hon. Ajantha Gammeddage", seat: "G-83 (Matara)" },
     { name: "Hon. Ajith Gihan", seat: "G-84 (Puttalam)" },
-    { name: "Hon. (Dr.)Jagath Gunawardana", seat: "OG-112 (Kurunegala)" },
+    { name: "Hon. (Dr.)Jagath Gunawardana", seat: "G-85 (Kurunegala)" },
     { name: "Hon. Ashoka Gunasena", seat: "OG-112 (Kurunegala)" },
     { name: "Hon. Ruwanthilaka Jayakody", seat: "G-87 (Gampaha)" },
     { name: "Hon. (Mrs.) Thushari Jayasingha (AAL)", seat: "G-88 (Kandy)" },
