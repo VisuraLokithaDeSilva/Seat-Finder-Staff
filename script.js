@@ -1,4 +1,4 @@
-kikconst nameInput = document.getElementById("nameInput");
+const nameInput = document.getElementById("nameInput");
 const seatNumberInput = document.getElementById("seatNumber");
 const suggestionsList = document.getElementById("suggestions");
 
