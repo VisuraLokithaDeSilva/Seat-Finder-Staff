@@ -1,4 +1,4 @@
-const nameInput = document.getElementById("nameInput");
+kikconst nameInput = document.getElementById("nameInput");
 const seatNumberInput = document.getElementById("seatNumber");
 const suggestionsList = document.getElementById("suggestions");
 
@@ -83,7 +83,7 @@ const members = [
     { name: "Hon. (Mrs.) M.A.C.S. Chathuri Gangani", seat: "G-78 (Moneragala)" },
     { name: "Hon. Lasith Bhashana Gamage", seat: "G-79 (Gampaha)" },
     { name: "Hon. Thilanka U. Gamage", seat: "G-80 (Galle)" },
-    { name: "Hon. (Mrs.) Nilusha Lakmali Gamage", seat: "G-81 (Ratnapura)" },
+    { name: "Hon. (Mrs.) Nilusha Lakmali Gamage (AAL)", seat: "G-81 (Ratnapura)" },
     { name: "Hon. Ajantha Gammeddage", seat: "G-82 (Matara)" },
     { name: "Hon. Ajith Gihan", seat: "G-83 (Puttalam)" },
     { name: "Hon. (Dr.)Jagath Gunawardana", seat: "G-84 (Kurunegala)" },
