@@ -317,7 +317,7 @@ function generateSeatingLayout() {
                                 seatDiv.style.backgroundColor = "#FFADAD"; // Default G/OG color
                             }
                         } else if (seatNum.startsWith("O-")) {
-                            if (["O-73", "O-74", "O-75", "O-76", "O-77", "O-78", "O-58"].includes(seatNum)) {
+                            if (["O-73", "O-74", "O-75", "O-76", "O-77", "O-78"].includes(seatNum)) {
                                 seatDiv.style.backgroundColor = "#DEDAF4"; // Purple
                             } else {
                                 seatDiv.style.backgroundColor = "#E7FFCE"; // Default O color
