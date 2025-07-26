@@ -83,7 +83,7 @@ const members = [
     { name: "Hon. (Mrs.) M.A.C.S. Chathuri Gangani", seat: "G-78 (Moneragala)" },
     { name: "Hon. Lasith Bhashana Gamage", seat: "G-79 (Gampaha)" },
     { name: "Hon. Thilanka U. Gamage", seat: "G-80 (Galle)" },
-    { name: "Hon. (Mrs.) Nilusha Lakmali Gamage (AAL)", seat: "G-81 (Ratnapura)" },
+    { name: "Hon. (Mrs.) Nilusha Lakmali Gamage", seat: "G-81 (Ratnapura)" },
     { name: "Hon. Ajantha Gammeddage", seat: "G-82 (Matara)" },
     { name: "Hon. Ajith Gihan", seat: "G-83 (Puttalam)" },
     { name: "Hon. (Dr.)Jagath Gunawardana", seat: "G-84 (Kurunegala)" },
@@ -123,7 +123,7 @@ const members = [
     { name: "Hon. (Dr.) Sandaruwan Madarasinghe", seat: "G-116 (Hambantota)" },
 
     
-    { name: "Hon. Prageeth Madhuranga (LCdr)(Rtd)", seat: "OG-65 (Gampaha)" },
+    { name: "Hon. Prageeth Madhuranga", seat: "OG-65 (Gampaha)" },
     { name: "Hon. Jagath Manuwarna", seat: "OG-66 (Kandy)" },
     { name: "Hon. Ruwan Mapalagama", seat: "OG-67 (Gampaha)" },
     { name: "Hon. (Dr.) Nandana Millagala", seat: "OG-68 (Kegalla)" },
@@ -224,7 +224,7 @@ const members = [
     { name: "Hon. D. V. Chanaka", seat: "O-55 (Hambantota)" },
     { name: "Hon. Chanaka Madugoda", seat: "O-56 (Galle)" },
     { name: "Hon. M.S. Uthumalebbe", seat: "O-57 (Digamadulla)" },
-    { name: "Hon. M.S. Abthul Wazeeth", seat: "O-58 (National List)" },
+    { name: "Hon. M.S.A Abthul Wazeeth", seat: "O-58 (National List)" },
     { name: "Hon. K.S. Kugathasan", seat: "O-59 (Trincomalee)" },
     { name: "Hon. Thurairasa Ravikaran", seat: "O-60 (Vanni)" },
     { name: "Hon. Suranga Rathnayaka", seat: "O-61 (Anuradhapura)" },
@@ -235,7 +235,6 @@ const members = [
     { name: "Hon. (Dr.) Pathmanathan Sathiyalingam", seat: "O-80 (National List)" },
     { name: "Hon. (Dr.) Jagath Wickramaratne", seat: "Speaker" }
     ];
-
 
 const sequence = [
     'BBBBBBEBBBBBB', 'BBBBBBEBBBBBB', 'BBBBBBEBBBBBB', 'BBBBBBEBBBBBB', 'BB',
