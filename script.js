@@ -224,7 +224,7 @@ const members = [
     { name: "Hon. D. V. Chanaka", seat: "O-55 (Hambantota)" },
     { name: "Hon. Chanaka Madugoda", seat: "O-56 (Galle)" },
     { name: "Hon. M.S. Uthumalebbe", seat: "O-57 (Digamadulla)" },
-    { name: "Hon. M.S.A Abthul Wazeeth", seat: "O-58 (National List)" },
+    { name: "Hon. M.S. Abthul Wazeeth", seat: "O-58 (National List)" },
     { name: "Hon. K.S. Kugathasan", seat: "O-59 (Trincomalee)" },
     { name: "Hon. Thurairasa Ravikaran", seat: "O-60 (Vanni)" },
     { name: "Hon. Suranga Rathnayaka", seat: "O-61 (Anuradhapura)" },
