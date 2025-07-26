@@ -123,7 +123,7 @@ const members = [
     { name: "Hon. (Dr.) Sandaruwan Madarasinghe", seat: "G-116 (Hambantota)" },
 
     
-    { name: "Hon. Prageeth Madhuranga", seat: "OG-65 (Gampaha)" },
+    { name: "Hon. Prageeth Madhuranga (LCdr)(Rtd)", seat: "OG-65 (Gampaha)" },
     { name: "Hon. Jagath Manuwarna", seat: "OG-66 (Kandy)" },
     { name: "Hon. Ruwan Mapalagama", seat: "OG-67 (Gampaha)" },
     { name: "Hon. (Dr.) Nandana Millagala", seat: "OG-68 (Kegalla)" },
