@@ -15,7 +15,7 @@ const members = [
     { name: "Hon. Wasantha Samarasinghe", seat: "G-10 (Anuradhapura)" },
     { name: "Hon. (Prof.) A.H.M.H. Abayarathna", seat: "G-11 (Puttalam)" },
     { name: "Hon. Chrishantha Abeysena", seat: "G-12 (Gampaha)" },
-    { name: "Hon. (Prof.) Anil Jayantha", seat: "G-13 (Gampaha)" },
+    { name: "Hon. (Dr.) Anil Jayantha", seat: "G-13 (Gampaha)" },
     { name: "Hon. Harshana Nanayakkara (AAL)", seat: "G-14 (Colombo)" },
     { name: "Hon. (Dr.) Dammika Patabendi", seat: "G-15 (Kegalla)" },
     { name: "Hon. (Mrs.) Saroja Savithri Paulraj", seat: "G-16 (Matara)" },
@@ -466,5 +466,6 @@ document.addEventListener("keydown", (event) => {
         }
     }
 });
+
 
 
