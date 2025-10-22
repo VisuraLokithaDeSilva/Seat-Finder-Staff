@@ -183,8 +183,8 @@ const members = [
     { name: "Hon. (Dr.) Ramanathan Archchuna", seat: "O-16 (Jaffna)" },
     { name: "Hon. M.A.M. Thahir", seat: "O-17 (Digamadulla)" },
     { name: "Hon. Dilith Jayaweera", seat: "O-18 (National List)" },
-    { name: "Hon. Shanakiyan Rajaputhiran Rasamanickam", seat: "O-19 (Batticola)" },
-    { name: "Hon. Sivagnanam Shritharan", seat: "O-20 (Jaffna)" },
+    { name: "Hon. Shanakiyan Rajaputhiran Rasamanickam", seat: "O-20 (Batticola)" },
+    { name: "Hon. Sivagnanam Shritharan", seat: "O-19 (Jaffna)" },
     { name: "Hon. Dayasiri Jayasekara (AAL)", seat: "O-21 (Kurunegala)" },
     { name: "Hon. (Dr.) Harsha de Silva", seat: "O-22 (Colombo)" },
     { name: "Hon. Ajith P. Perera", seat: "O-23 (Kalutara)" },
@@ -466,6 +466,7 @@ document.addEventListener("keydown", (event) => {
         }
     }
 });
+
 
 
 
