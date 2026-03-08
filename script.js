@@ -83,7 +83,8 @@ const members = [
     { name: "Hon. Sarath Kumara (AAL)", seat: "G-81 (Moneragala)" },
     { name: "Hon. (Mrs.) Nilanthi Kottahachchi (AAL)", seat: "G-82 (Kalutara)" },
     { name: "Hon. (Mrs.) M.A.C.S. Chathuri Gangani", seat: "G-83 (Moneragala)" },
-    { name: "Hon. Lasith Bhashana Gamage", seat: "G-84 (Gampaha)" },
+    
+    { name: "Hon. Darmapriya Wijesinghe", seat: "G-84 (Gampaha)" },
     { name: "Hon. Thilanka U. Gamage", seat: "G-85 (Galle)" },
     { name: "Hon. (Mrs.) Nilusha Lakmali Gamage", seat: "G-86 (Ratnapura)" },
     { name: "Hon. Ajantha Gammeddage", seat: "G-87 (Matara)" },
@@ -102,14 +103,14 @@ const members = [
     { name: "Hon. Darmapriya Dissanayaka", seat: "G-101 (Kurunegala)" },
     { name: "Hon. Sujeewa Dissanayake", seat: "G-102 (Kurunegala)" },
     { name: "Hon. Sugath Wasantha de Silva", seat: "G-97 (National List)" },
-    { name: "Hon. Susantha Dodawatta (AAL)", seat: "G-103 Colombo)" },
+    { name: "Hon. Susantha Dodawatta (AAL)", seat: "G-110 (Colombo)" },
     { name: "Hon. Susantha Kumara Nawarathna", seat: "G-104 (Anuradhapura)" },
     { name: "Hon. (Prof.) Sena Nanayakkara", seat: "G-105 (Anuradhapura)" },
     { name: "Hon. Aruna Panagoda", seat: "G-106 (Colombo)" },
     { name: "Hon. Nimal Palihena", seat: "G-107 (Anuradhapura)" },
     { name: "Hon. Nishantha Perera", seat: "G-108 (Galle)" },
     { name: "Hon. Stepni Fernando", seat: "G-109 (Gampaha)" },
-    { name: "Hon. Kanthasamy Prabu", seat: "G-110 (Batticaloa)" },
+    { name: "Hon. Kanthasamy Prabu", seat: "G-103 (Batticaloa)" },
     { name: "Hon. Lal Premanath", seat: "G-111 (Matara)" },
     { name: "Hon. Nanda Bandara", seat: "G-112 (Kegalle)" },
     { name: "Hon. Padmasiri Bandara", seat: "G-113 (Polonnaruwa)" },
@@ -139,7 +140,7 @@ const members = [
     { name: "Hon. Dr. Nishantha Samaraweera", seat: "OG-92 (Galle)" },
     { name: "Hon. Priyantha Wijerathna (AAL)", seat: "OG-93 (Digamadulla)" },
     { name: "Hon. Ruwan Wijeweera", seat: "OG-94 (Moneragala)" },
-    { name: "Hon. Darmapriya Wijesinghe", seat: "OG-95 (Gampaha)" },
+    { name: "Hon. Lasith Bhashana Gamage", seat: "OG-95 (Gampaha)" },
     { name: "Hon. (Mrs.) Hiruni Wijesinghe (AAL)", seat: "OG-96 (Puttalam)" },
     { name: "Hon. Athula Welandagoda", seat: "OG-97 (Hambantota)" },
     { name: "Hon. Fasmin Sharif", seat: "OG-98 (Kandy)" },
@@ -227,8 +228,8 @@ const members = [
     { name: "Hon. Thurairasa Ravikaran", seat: "O-60 (Vanni)" },
     { name: "Hon. Suranga Rathnayaka", seat: "O-61 (Anuradhapura)" },
     { name: "Hon. Jagath Vithana", seat: "O-62 (Kalutara)" },
-    { name: "Hon. Ismail Muththu Mohamed", seat: "O-63 (National List)" },
-    { name: "Hon. M. Nizam Kariapper (PC)", seat: "O-64 (National List)" },
+    { name: "Hon. M. Nizam Kariapper(PC)", seat: "O-63 (National List)" },
+    { name: "Hon. Naina Thambi Marrikkar Thahi", seat: "O-64 (National List)" },
     { name: "Hon. (Dr.) Elayathamby Srinath", seat: "O-79 (Batticola)" },
     { name: "Hon. (Dr.) Pathmanathan Sathiyalingam", seat: "O-80 (National List)" },
     { name: "Hon. (Dr.) Jagath Wickramaratne", seat: "Speaker" }
@@ -466,6 +467,7 @@ document.addEventListener("keydown", (event) => {
         }
     }
 });
+
 
 
 
